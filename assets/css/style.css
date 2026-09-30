@@ -43,7 +43,7 @@ h3 { font-size: clamp(1.15rem, 3vw, 1.4rem); }
 /* ---- 4. HEADER (crítico: logo 48px, sticky) ---- */
 .site-header { position: sticky; top: 0; z-index: 100; background: rgba(245,239,227,.92); backdrop-filter: blur(12px) saturate(120%); border-bottom: 1px solid rgba(143,181,160,.25); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: .7rem 0; gap: 1rem; }
-.header-logo { height: 48px; width: auto; flex-shrink: 0; }
+.header-logo { height: 48px; width: auto; flex-shrink: 0; border-radius: 50%; object-fit: cover; aspect-ratio: 1/1; }
 .header-nav ul { display: flex; gap: .6rem; list-style: none; flex-wrap: wrap; justify-content: flex-end; }
 .header-nav a { font-size: .82rem; font-weight: 500; color: var(--texto); padding: .3rem .6rem; border-radius: 999px; transition: background .15s, color .15s; }
 .header-nav a:hover, .header-nav a:focus { background: rgba(143,181,160,.15); color: var(--salvia-deep); outline: 2px solid var(--salvia); outline-offset: 2px; }
@@ -80,6 +80,7 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 .section { padding: 56px 0; }
 .section-alt { background: #EAE2C8; }
 .section-dark { background: var(--salvia-deep); color: var(--branco); }
+.na-agua-card { position: relative; overflow: hidden; border-radius: 28px; }
 .section-dark h2, .section-dark h3 { color: var(--dourado); }
 
 /* ---- 8. SERVIÇOS (cards + abas) ---- */
@@ -118,8 +119,11 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 .faq-a.open { max-height: 500px; }
 
 /* ---- 13. FORM ULTRA RÁPIDO ---- */
-.quick-form { background: var(--salvia-deep); color: var(--branco); border-radius: 28px; padding: 2.5rem; }
-.quick-form input, .quick-form select { width: 100%; padding: .8rem 1rem; border-radius: 12px; border: none; font-size: 1rem; background: rgba(255,255,255,.95); color: var(--texto); }
+.quick-form { background: #3E5A4A; color: #fff; border-radius: 28px; padding: 2.5rem; }
+.quick-form .btn-primary { background: #EBD9A9; color: #3E5A4A; font-weight: 600; font-size: 17px; border-radius: 999px; border: 0; width: 100%; min-height: 54px; }
+.quick-form input, .quick-form select, .quick-form textarea { width: 100%; font-family: inherit; font-size: 17px; padding: 14px 16px; border: 0; border-radius: 16px; background: #F5EFE3; color: #2F3E36; min-height: 52px; }
+.quick-form textarea { min-height: 120px; resize: vertical; }
+.quick-form input:focus, .quick-form select:focus, .quick-form textarea:focus { outline: 3px solid #EBD9A9; outline-offset: 2px; }
 .quick-form label { display: block; font-weight: 600; margin-bottom: .35rem; font-size: .95rem; }
 
 /* ---- 14. UNIDADES (abas + mapa) ---- */
@@ -147,3 +151,12 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 
 /* Fonte A+ */
 .font-big { font-size: 1.15em !important; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(58,58,54,.85); z-index: 300; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.modal-overlay[hidden]{display:none!important}
+.modal-box{background:#fff;border-radius:28px;padding:2rem;max-width:480px;width:100%;max-height:85vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.unimed-container { border-radius: 20px; overflow: hidden; max-width: 280px; margin: 0 auto; } .unimed-container img { mix-blend-mode: multiply; }
+.services-tabs { scrollbar-width: none; -ms-overflow-style: none; } .services-tabs::-webkit-scrollbar { display: none; }
+.services-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+.service-card.compact .desc, .service-card.compact .tag, .service-card.compact .btn-primary { display: none; }
+.service-card { min-height: 130px; padding: 14px; }
+.service-card h3 { font-size: 17px; line-height: 1.25; }
