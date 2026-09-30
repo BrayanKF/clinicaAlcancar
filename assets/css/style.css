@@ -77,7 +77,7 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 }
 
 /* ---- 7. SECTIONS ---- */
-.section { padding: 56px 0; }
+.section { padding: 48px 0; }
 .section-alt { background: #EAE2C8; }
 .section-dark { background: var(--salvia-deep); color: var(--branco); }
 .na-agua-card { position: relative; overflow: hidden; border-radius: 28px; }
@@ -85,7 +85,7 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 
 /* ---- 8. SERVIÇOS (cards + abas) ---- */
 .services-tabs { display: flex; gap: .5rem; flex-wrap: nowrap; overflow-x: auto; margin-bottom: 2rem; -webkit-overflow-scrolling: touch; padding-bottom: .3rem; }
-.tab-btn { padding: .55rem 1rem; border-radius: 999px; border: 1.5px solid rgba(143,181,160,.4); background: rgba(255,255,255,.7); color: var(--texto); font-weight: 500; font-size: .9rem; transition: all .2s; }
+.tab-btn { padding: .55rem 1rem; border-radius: 999px; border: 1.5px solid rgba(143,181,160,.4); background: rgba(255,255,255,.7); color: var(--texto); font-weight: 500; font-size: .9rem; white-space: nowrap; transition: all .2s; min-height: 48px; }
 .tab-btn.active, .tab-btn:hover { background: var(--salvia-deep); color: var(--branco); border-color: var(--salvia-deep); }
 .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
 .service-card { background: var(--branco); border-radius: 24px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,.05); transition: transform .2s, box-shadow .2s; }
@@ -160,3 +160,18 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 .service-card.compact .desc, .service-card.compact .tag, .service-card.compact .btn-primary { display: none; }
 .service-card { min-height: 130px; padding: 14px; }
 .service-card h3 { font-size: 17px; line-height: 1.25; }
+.services-tabs { scrollbar-width: none; -ms-overflow-style: none; } .services-tabs::-webkit-scrollbar { display: none; } .tab-btn.active { scroll-margin-inline: center; scroll-snap-align: center; }
+.about-card { max-height:260px; width:100%; }
+.about-card{max-height:260px;width:100%;object-fit:cover}
+.vida-button{width:100%;min-height:52px}
+.btn-primary{position:relative;z-index:2}
+.instagram-card { border-radius: 20px; overflow: hidden; aspect-ratio: 1/1; background: linear-gradient(135deg, #8FB5A0, #EBD9A9); display: flex; align-items: center; justify-content: center; }
+.instagram-card svg { width: 40px; height: 40px; }
+.service-card { min-height: 130px; padding: 14px; border-radius: 16px; background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,.05); transition: all .2s; }
+.service-card .desc, .service-card .tag, .service-card .btn-primary { display: none; }
+.service-card.expanded { grid-column: 1 / -1; min-height: 200px; }
+.service-card.expanded .desc, .service-card.expanded .tag, .service-card.expanded .btn-primary { display: block; }
+.service-card h3 { font-family: var(--fonte-titulo); font-size: 17px; line-height: 1.25; }
+.service-card .impact { font-size: 14px; line-height: 1.3; color: var(--salvia-deep); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.service-card button { width: 100%; min-height: 48px; border: 0; background: transparent; text-align: left; cursor: pointer; padding: 0; }
+.service-card button:hover { background: rgba(143,181,160,.08); }
