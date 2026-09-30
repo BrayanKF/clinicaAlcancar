@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fisioterapia em Almenara e Jacinto | Alcançar Clínica de Fisioterapia Integrada</title>
 <meta name="description" content="Fisioterapia em Almenara e Jacinto — fisioterapia, psicologia, nutrição, Pilates, hidroterapia e Unimed Três Vales. Alcançar: Cuidar • Acolher • Transformar.">
 
@@ -68,7 +68,7 @@ img{max-width:100%;height:auto;display:block}
     <a href="#" aria-label="Alcançar — Página inicial" class="focus-ring">
       <img src="/assets/img/logo.jpg" alt="Logo Alcançar — árvore dourada em círculo verde-sálvia" class="header-logo" width="48" height="48">
     </a>
-    <nav class="header-nav" aria-label="Menu principal">
+    <nav class="header-nav" aria-label="Menu principal" id="mainNav" style="display:none;">
       <ul>
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
@@ -82,7 +82,7 @@ img{max-width:100%;height:auto;display:block}
     </nav>
     <div style="display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;">
       <button id="btnFontA" onclick="increaseFont()" aria-label="Aumentar fonte" class="btn-primary" style="padding:.55rem .9rem;font-size:.85rem;">A+</button>
-      <a href="#agendar-seletor" class="btn-primary" aria-label="Agendar consulta">Agende sua consulta →</a>
+      <button onclick="openMobileMenu()" aria-label="Abrir menu" aria-expanded="false" id="hamburgerBtn" style="width:48px;height:48px;border-radius:50%;background:var(--salvia-deep);color:#fff;font-size:1.4rem;display:flex;align-items:center;justify-content:center;">☰</button>
     </div>
   </div>
 </header>
@@ -633,7 +633,17 @@ img{max-width:100%;height:auto;display:block}
 </section>
 
 <!-- ========== SELETOR DE AGENDAR (modal) ========== -->
-<div id="agendar-seletor" role="dialog" aria-modal="true" aria-label="Agendar consulta" style="position:fixed;inset:0;background:rgba(58,58,54,.7);backdrop-filter:blur(8px);z-index:300;display:none;align-items:center;justify-content:center;padding:1rem;">
+<div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu móvel" style="position:fixed;inset:0;background:rgba(58,58,54,.92);z-index:210;display:none;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:2rem;">
+  <button onclick="closeMobileMenu()" aria-label="Fechar menu" style="position:absolute;top:1.5rem;right:1.5rem;font-size:2rem;background:none;color:#fff;">×</button>
+  <a href="#inicio" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Início</a>
+  <a href="#sobre" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Sobre</a>
+  <a href="#servicos" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Serviços</a>
+  <a href="#convenio" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Convênio</a>
+  <a href="#estetica" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Estética</a>
+  <a href="#equipe" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Equipe</a>
+  <a href="#unidades" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Unidades</a>
+  <a href="#contato" onclick="closeMobileMenu()" style="color:#fff;font-family:var(--fonte-titulo);font-size:1.8rem;">Contato</a>
+</div>
   <div style="background:var(--branco);border-radius:28px;padding:2.5rem;max-width:600px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;">
     <button onclick="closeAgendar()" aria-label="Fechar" style="position:absolute;top:1rem;right:1rem;font-size:1.5rem;background:none;color:var(--texto);">×</button>
     <h3>Agende a sua consulta aqui</h3>

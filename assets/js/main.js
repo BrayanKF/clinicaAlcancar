@@ -347,6 +347,30 @@
     let btn = document.querySelector('.skip-link');
   } catch (e) {}
 
+  // ---- 17. MENU HAMBÚRGUER ----
+  window.openMobileMenu = function() {
+    try {
+      const m = document.getElementById('mobileMenu');
+      const btn = document.getElementById('hamburgerBtn');
+      if (m) { m.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+    } catch (e) {}
+  };
+  window.closeMobileMenu = function() {
+    try {
+      const m = document.getElementById('mobileMenu');
+      const btn = document.getElementById('hamburgerBtn');
+      if (m) { m.style.display = 'none'; document.body.style.overflow = ''; }
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    } catch (e) {}
+  };
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const m = document.getElementById('mobileMenu');
+      if (m && m.style.display === 'flex') closeMobileMenu();
+    }
+  });
+
   // ---- 16. MOSTRAR DEPOIMENTOS SE FLAG ATIVA ----
   try {
     if (window.ALCANCAR_CONFIG && window.ALCANCAR_CONFIG.showTestimonials === true) {

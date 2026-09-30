@@ -5,8 +5,10 @@
 
 /* ---- 0. RESET / BASE ---- */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { max-width: 100%; overflow-x: hidden; }
+img, svg, video, iframe { max-width: 100%; height: auto; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-body { font-family: 'Poppins', 'Nunito', system-ui, sans-serif; font-size: 17px; line-height: 1.55; color: #3A3A36; background: #F5EFE3; overflow-x: hidden; }
+body { font-family: 'Poppins', 'Nunito', system-ui, sans-serif; font-size: 18px; line-height: 1.6; color: #3A3A36; background: #F5EFE3; overflow-x: hidden; }
 img, picture { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; font-size: inherit; cursor: pointer; border: none; background: transparent; }
@@ -29,13 +31,13 @@ button { font-family: inherit; font-size: inherit; cursor: pointer; border: none
 
 /* ---- 2. TYPOGRAPHY ---- */
 h1, h2, h3, h4 { font-family: var(--fonte-titulo); font-weight: 600; line-height: 1.15; letter-spacing: -0.02em; color: var(--salvia-deep); }
-h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); }
-h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); }
-h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+h1 { font-size: clamp(2.2rem, 9vw, 3rem); }
+h2 { font-size: clamp(1.75rem, 7vw, 2.4rem); }
+h3 { font-size: clamp(1.15rem, 3vw, 1.4rem); }
 
 /* ---- 3. UTILS ---- */
-.container { width: min(92%, 1200px); margin-inline: auto; }
-.btn-primary { display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 1.6rem; border-radius: 999px; background: var(--salvia-deep); color: var(--branco); font-weight: 600; letter-spacing: .01em; box-shadow: 0 8px 24px rgba(79,107,90,.22); transition: transform .15s ease, box-shadow .15s ease, background .2s; }
+.container { width: min(92%, 1200px); margin-inline: auto; padding: 0 20px; }
+.btn-primary { display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 1.6rem; border-radius: 999px; background: var(--salvia-deep); color: var(--branco); font-weight: 600; letter-spacing: .01em; box-shadow: 0 8px 24px rgba(79,107,90,.22); transition: transform .15s ease, box-shadow .15s ease, background .2s; min-height: 52px; font-size: 17px; }
 .btn-primary:hover { background: var(--salvia-dark); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(79,107,90,.3); }
 
 /* ---- 4. HEADER (crítico: logo 48px, sticky) ---- */
@@ -63,16 +65,25 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 .hero-icons span { display: inline-flex; align-items: center; gap: .45rem; padding: .5rem .95rem; background: rgba(255,255,255,.65); border-radius: 999px; font-size: .82rem; font-weight: 500; color: var(--texto); box-shadow: 0 2px 8px rgba(0,0,0,.04); }
 
 /* Decorative hero SVG shapes (organic) */
-.hero-deco { position: absolute; pointer-events: none; z-index: 1; opacity: .35; }
+.hero-deco { position: absolute; pointer-events: none; z-index: 1; opacity: .35; overflow: hidden; }
+
+@media (max-width: 768px) {
+  .header-nav { display: none; }
+  .hero-title { font-size: clamp(2.2rem, 9vw, 3rem); }
+  .services-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .body-map { grid-template-columns: 1fr; }
+  .hero-btns .btn-primary { width: 100%; justify-content: center; }
+}
 
 /* ---- 7. SECTIONS ---- */
-.section { padding: 5rem 0; }
+.section { padding: 56px 0; }
 .section-alt { background: #EAE2C8; }
 .section-dark { background: var(--salvia-deep); color: var(--branco); }
 .section-dark h2, .section-dark h3 { color: var(--dourado); }
 
 /* ---- 8. SERVIÇOS (cards + abas) ---- */
-.services-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.services-tabs { display: flex; gap: .5rem; flex-wrap: nowrap; overflow-x: auto; margin-bottom: 2rem; -webkit-overflow-scrolling: touch; padding-bottom: .3rem; }
 .tab-btn { padding: .55rem 1rem; border-radius: 999px; border: 1.5px solid rgba(143,181,160,.4); background: rgba(255,255,255,.7); color: var(--texto); font-weight: 500; font-size: .9rem; transition: all .2s; }
 .tab-btn.active, .tab-btn:hover { background: var(--salvia-deep); color: var(--branco); border-color: var(--salvia-deep); }
 .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
