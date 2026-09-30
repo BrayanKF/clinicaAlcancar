@@ -77,7 +77,11 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 }
 
 /* ---- 7. SECTIONS ---- */
+<<<<<<< HEAD
 .section { padding: 48px 0; }
+=======
+.section { padding: 56px 0; }
+>>>>>>> 420db11 (melhoria em componentes)
 .section-alt { background: #EAE2C8; }
 .section-dark { background: var(--salvia-deep); color: var(--branco); }
 .na-agua-card { position: relative; overflow: hidden; border-radius: 28px; }
@@ -85,7 +89,11 @@ html.js-ready .anim-up.in-view { animation-play-state: running; }
 
 /* ---- 8. SERVIÇOS (cards + abas) ---- */
 .services-tabs { display: flex; gap: .5rem; flex-wrap: nowrap; overflow-x: auto; margin-bottom: 2rem; -webkit-overflow-scrolling: touch; padding-bottom: .3rem; }
+<<<<<<< HEAD
 .tab-btn { padding: .55rem 1rem; border-radius: 999px; border: 1.5px solid rgba(143,181,160,.4); background: rgba(255,255,255,.7); color: var(--texto); font-weight: 500; font-size: .9rem; white-space: nowrap; transition: all .2s; min-height: 48px; }
+=======
+.tab-btn { padding: .55rem 1rem; border-radius: 999px; border: 1.5px solid rgba(143,181,160,.4); background: rgba(255,255,255,.7); color: var(--texto); font-weight: 500; font-size: .9rem; transition: all .2s; }
+>>>>>>> 420db11 (melhoria em componentes)
 .tab-btn.active, .tab-btn:hover { background: var(--salvia-deep); color: var(--branco); border-color: var(--salvia-deep); }
 .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
 .service-card { background: var(--branco); border-radius: 24px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,.05); transition: transform .2s, box-shadow .2s; }
