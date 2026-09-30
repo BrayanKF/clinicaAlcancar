@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fisioterapia em Almenara e Jacinto | Alcançar Clínica de Fisioterapia Integrada</title>
+<meta name="description" content="Fisioterapia em Almenara e Jacinto — fisioterapia, psicologia, nutrição, Pilates, hidroterapia e Unimed Três Vales. Alcançar: Cuidar • Acolher • Transformar.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fisioterapia em Almenara e Jacinto | Alcançar Clínica de Fisioterapia Integrada">
+<meta property="og:description" content="Clínica de fisioterapia integrada em Almenara e Jacinto. Atendimento humanizado, Convênio Unimed Três Vales.">
+<meta property="og:image" content="/assets/img/logo.jpg">
+<meta property="og:url" content="https://alcancarfisio.vercel.app/">
+<meta property="og:locale" content="pt_BR">
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physiotherapy",
+  "name": "ALCANÇAR – Clínica de Fisioterapia Integrada",
+  "url": "https://alcancarfisio.vercel.app/",
+  "image": "/assets/img/logo.jpg",
+  "description": "Clínica de fisioterapia integrada em Almenara e Jacinto. Atendimento humanizado, convênio Unimed Três Vales.",
+  "address": [
+    { "@type":"PostalAddress", "streetAddress":"Rua Henrique Heitman, 288", "addressLocality":"Almenara", "addressRegion":"MG", "postalCode":"", "addressCountry":"BR" },
+    { "@type":"PostalAddress", "streetAddress":"Rua Clarindo Barbosa, 92", "addressLocality":"Jacinto", "addressRegion":"MG", "postalCode":"", "addressCountry":"BR" }
+  ],
+  "telephone": ["+5533999423675","+5533999193564"],
+  "openingHoursSpecification": [
+    { "@type":"OpeningHoursSpecification", "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens":"07:00","closes":"21:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/alcancarfisio"]
+}
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="/assets/img/logo.jpg" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/logo.jpg">
+
+<style>
+/* CSS crítico inline: reset + hero básico + logo tamanho */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;font-size:17px;line-height:1.55;color:#3A3A36;background:#F5EFE3;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(245,239,227,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(143,181,160,.25)}
+.header-logo{height:48px;width:auto;flex-shrink:0}
+</style>
+</head>
+
+<body>
+
+<a href="#conteudo" class="skip-link">Pular para conteúdo</a>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" role="banner" aria-label="Cabeçalho">
+  <div class="container header-inner">
+    <a href="#" aria-label="Alcançar — Página inicial" class="focus-ring">
+      <img src="/assets/img/logo.jpg" alt="Logo Alcançar — árvore dourada em círculo verde-sálvia" class="header-logo" width="48" height="48">
+    </a>
+    <nav class="header-nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#convenio">Convênio</a></li>
+        <li><a href="#estetica">Estética</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#unidades">Unidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;">
+      <button id="btnFontA" onclick="increaseFont()" aria-label="Aumentar fonte" class="btn-primary" style="padding:.55rem .9rem;font-size:.85rem;">A+</button>
+      <a href="#agendar-seletor" class="btn-primary" aria-label="Agendar consulta">Agende sua consulta →</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ========== HERO ========== -->
+<section id="inicio" class="hero" aria-label="Apresentação">
+  <div class="container hero-inner">
+    <span class="hero-label">Clínica de Fisioterapia Integrada • Almenara e Jacinto</span>
+    <h1 class="hero-title anim-up" id="heroTitle">Cuidar do seu <span id="heroWord">movimento</span></h1>
+    <p class="hero-sub anim-up" style="animation-delay:.1s">
+      Fisioterapia, psicologia, nutrição, atividades na água e estética em um só lugar. Atendimento humanizado para você e para toda a sua família.
+    </p>
+    <div class="hero-btns anim-up" style="animation-delay:.2s">
+      <a href="#agendar-seletor" class="btn-primary">Agende a sua consulta aqui →</a>
+      <a href="#servicos" class="btn-primary" style="background:rgba(79,107,90,.12);color:var(--salvia-deep);box-shadow:none;">Ver nossos serviços</a>
+    </div>
+    <p class="hero-micro anim-up" style="animation-delay:.3s">Rápido, seguro e sem compromisso. Atendemos <strong>Unimed Três Vales</strong>.</p>
+    <div class="hero-icons anim-up" style="animation-delay:.4s" aria-label="Diferenciais">
+      <span>✓ Atendimento humanizado</span>
+      <span>✓ Vários especialistas no mesmo lugar</span>
+      <span>✓ 2 unidades: Almenara e Jacinto</span>
+      <span>✓ Atendemos Unimed Três Vales</span>
+      <span>✓ Segunda a sexta, das 7h às 21h</span>
+    </div>
+  </div>
+  <!-- Decoração SVG orgânica -->
+  <svg class="hero-deco" style="top:-60px;right:-10%;width:520px;height:520px;" viewBox="0 0 200 200" aria-hidden="true">
+    <defs><linearGradient id="gradHero" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8FB5A0"/><stop offset="100%" stop-color="#EBD9A9"/></linearGradient></defs>
+    <circle cx="100" cy="100" r="85" fill="url(#gradHero)" opacity=".7"/>
+    <path d="M100 20 Q140 80 100 180 Q60 80 100 20" fill="none" stroke="#4F6B5A" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  </svg>
+</section>
+
+<!-- ========== SOBRE ========== -->
+<section id="sobre" class="section" aria-label="Sobre a clínica">
+  <div class="container">
+    <h2 class="anim-up">Uma clínica para cuidar de você e de toda a sua família</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;">
+      <div class="anim-up" style="animation-delay:.1s">
+        <p style="font-size:1.1rem;color:var(--texto-claro);line-height:1.7;">A <strong>Alcançar</strong> é uma clínica de fisioterapia integrada. Isso quer dizer que aqui vários profissionais trabalham juntos para cuidar do seu corpo, da sua mente e da sua rotina. Nosso trabalho é cuidar do seu bem-estar, com atenção, carinho e um tratamento pensado para cada pessoa.</p>
+        <div style="margin-top:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+          <div style="background:rgba(143,181,160,.1);padding:1.2rem;border-radius:16px;">
+            <h3 style="font-size:1.1rem;margin-bottom:.4rem;">Cuidar</h3>
+            <p style="font-size:.95rem;color:var(--texto-claro);">Olhamos para você por inteiro, não só para a dor.</p>
+          </div>
+          <div style="background:rgba(143,181,160,.1);padding:1.2rem;border-radius:16px;">
+            <h3 style="font-size:1.1rem;margin-bottom:.4rem;">Acolher</h3>
+            <p style="font-size:.95rem;color:var(--texto-claro);">Aqui você é ouvido, sem pressa e sem julgamento.</p>
+          </div>
+          <div style="background:rgba(143,181,160,.1);padding:1.2rem;border-radius:16px;">
+            <h3 style="font-size:1.1rem;margin-bottom:.4rem;">Transformar</h3>
+            <p style="font-size:.95rem;color:var(--texto-claro);">Nosso objetivo é ajudar você a recuperar movimento, autonomia e qualidade de vida.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="anim-up" style="animation-delay:.2s;margin:0;">
+        <!-- Placeholder elegante: forma orgânica com ícone -->
+        <div style="background:linear-gradient(135deg,#8FB5A0,#4F6B5A);border-radius:24px;padding:3rem 2rem;text-align:center;color:#fff;min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <svg width="80" height="80" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="rgba(255,255,255,.15)"/><path d="M50 20 L55 45 L80 45 L60 60 L65 85 L50 70 L35 85 L40 60 L20 45 L45 45 Z" fill="#EBD9A9"/></svg>
+          <figcaption style="margin-top:1rem;font-family:var(--fonte-titulo);font-size:1.3rem;color:var(--dourado);">Sobre a Alcançar</figcaption>
+          <p style="margin-top:.5rem;font-size:.9rem;color:rgba(255,255,255,.85);">Foto real — substitua o placeholder por uma imagem da clínica.</p>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FERRAMENTA GUIADA ========== -->
+<section id="ferramenta" class="section section-alt" aria-label="Como podemos te ajudar">
+  <div class="container">
+    <h2 class="anim-up">Como podemos te ajudar?</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Responda 2 perguntas rápidas e descubra o atendimento ideal para você.</p>
+
+    <div class="guide-box anim-up" style="animation-delay:.2s" id="guideBox" role="region" aria-live="polite">
+      <div id="guideStep1">
+        <p style="font-size:1.05rem;font-weight:600;margin-bottom:1rem;">Pergunta 1: Para quem é o atendimento?</p>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+          <button onclick="guidePick(1,'mim')" class="btn-primary" style="background:rgba(255,255,255,.15);">Para mim</button>
+          <button onclick="guidePick(1,'filho')" class="btn-primary" style="background:rgba(255,255,255,.15);">Para meu filho ou minha filha</button>
+          <button onclick="guidePick(1,'idoso')" class="btn-primary" style="background:rgba(255,255,255,.15);">Para uma pessoa idosa</button>
+          <button onclick="guidePick(1,'gestante')" class="btn-primary" style="background:rgba(255,255,255,.15);">Para gestante ou pós-parto</button>
+        </div>
+      </div>
+      <div id="guideStep2" style="display:none;margin-top:1.5rem;">
+        <p style="font-size:1.05rem;font-weight:600;margin-bottom:1rem;">Pergunta 2: O que você está sentindo ou buscando?</p>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+          <button onclick="guidePick(2,'dor')" class="btn-primary" style="background:rgba(255,255,255,.15);">Dor no corpo ou na coluna</button>
+          <button onclick="guidePick(2,'recuperacao')" class="btn-primary" style="background:rgba(255,255,255,.15);">Recuperação de cirurgia ou lesão</button>
+          <button onclick="guidePick(2,'desenvolvimento')" class="btn-primary" style="background:rgba(255,255,255,.15);">Desenvolvimento e aprendizado da criança</button>
+          <button onclick="guidePick(2,'emocional')" class="btn-primary" style="background:rgba(255,255,255,.15);">Emocional e comportamento</button>
+          <button onclick="guidePick(2,'nutricion')" class="btn-primary" style="background:rgba(255,255,255,.15);">Alimentação e nutrição</button>
+          <button onclick="guidePick(2,'estetica')" class="btn-primary" style="background:rgba(255,255,255,.15);">Estética e cuidado com a pele</button>
+          <button onclick="guidePick(2,'atividade')" class="btn-primary" style="background:rgba(255,255,255,.15);">Atividade física e postura</button>
+        </div>
+      </div>
+      <div id="guideResult" style="display:none;margin-top:1.5rem;background:rgba(255,255,255,.12);padding:1.2rem;border-radius:16px;">
+        <p style="font-size:1.2rem;font-weight:700;">Indicamos para você: <span id="resService" style="color:var(--dourado);">—</span></p>
+        <p style="margin-top:.5rem;font-size:.95rem;">Um profissional da Alcançar avalia o seu caso e confirma o melhor tratamento.</p>
+        <a href="#agendar-seletor" class="btn-primary" style="margin-top:.8rem;display:inline-block;background:var(--dourado);color:var(--salvia-deep);">Agendar esse atendimento</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MAPA DO CORPO ========== -->
+<section id="mapa-corpo" class="section" aria-label="Onde você sente dor">
+  <div class="container">
+    <h2 class="anim-up">Onde você sente dor?</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Toque na parte do corpo e veja como podemos ajudar.</p>
+
+    <div class="body-map anim-up" style="animation-delay:.2s">
+      <!-- Silhueta SVG -->
+      <div>
+        <svg class="body-svg" viewBox="0 0 240 420" aria-label="Mapa do corpo — áreas clicáveis" role="img">
+          <defs>
+            <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8FB5A0"/><stop offset="100%" stop-color="#4F6B5A"/></linearGradient>
+          </defs>
+          <!-- Cabeça -->
+          <ellipse cx="120" cy="55" rx="28" ry="32" fill="url(#bodyGrad)" stroke="#3A5850" stroke-width="2"/>
+          <text x="120" y="58" text-anchor="middle" font-size="8" fill="#fff" font-family="Poppins,sans-serif">Cabeça</text>
+          <!-- Tronco -->
+          <path d="M95 85 Q95 180 120 240 Q145 180 145 85 Z" fill="url(#bodyGrad)" stroke="#3A5850" stroke-width="2"/>
+          <text x="120" y="160" text-anchor="middle" font-size="7" fill="#fff" font-family="Poppins,sans-serif">Coluna</text>
+          <!-- Braços -->
+          <path d="M95 95 Q60 140 50 190" fill="none" stroke="url(#bodyGrad)" stroke-width="14" stroke-linecap="round"/>
+          <path d="M145 95 Q180 140 190 190" fill="none" stroke="url(#bodyGrad)" stroke-width="14" stroke-linecap="round"/>
+          <text x="45" y="150" font-size="7" fill="#3A5850">Ombro</text>
+          <text x="185" y="150" font-size="7" fill="#3A5850">Ombro</text>
+          <!-- Pernas -->
+          <path d="M105 240 Q100 320 95 390" fill="none" stroke="url(#bodyGrad)" stroke-width="16" stroke-linecap="round"/>
+          <path d="M135 240 Q140 320 145 390" fill="none" stroke="url(#bodyGrad)" stroke-width="16" stroke-linecap="round"/>
+          <!-- Quadril -->
+          <ellipse cx="120" cy="235" rx="22" ry="14" fill="#EBD9A9" stroke="#4F6B5A" stroke-width="2"/>
+          <text x="120" y="238" text-anchor="middle" font-size="7" fill="#3A5850">Quadril</text>
+          <!-- Pesos / botão -->
+          <rect x="85" y="370" width="70" height="18" rx="9" fill="#F3C8A3" stroke="#4F6B5A" stroke-width="2"/>
+          <text x="120" y="383" text-anchor="middle" font-size="7" fill="#3A5850">Pé</text>
+        </svg>
+        <div role="group" aria-label="Áreas do corpo" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem;">
+          <button onclick="showBodyCard('pescoço')" class="btn-primary" style="font-size:.8rem;padding:.5rem .8rem;">Pescoço</button>
+          <button onclick="showBodyCard('ombro')" class="btn-primary" style="font-size:.8rem;padding:.5rem .8rem;">Ombro</button>
+          <button onclick="showBodyCard('coluna')" class="btn-primary" style="font-size:.8rem;padding:.5rem .8rem;">Coluna</button>
+          <button onclick="showBodyCard('quadril')" class="btn-primary" style="font-size:.8rem;padding:.5rem .8rem;">Quadril</button>
+          <button onclick="showBodyCard('joelho')" class="btn-primary" style="font-size:.8rem;padding:.5rem .8rem;">Joelho</button>
+          <button onclick="showBodyCard('pé')" class="btn-primary" style="font-size:.8rem;padding:.5rem .8rem;">Pé</button>
+        </div>
+      </div>
+
+      <div>
+        <div id="bodyCards" style="display:flex;flex-direction:column;gap:1rem;">
+          <article class="body-card" data-body="pescoço" aria-label="Pescoço e cabeça">
+            <h3>Pescoço e cabeça</h3>
+            <p>Dor e tensão no pescoço e na região da cabeça.</p>
+            <p><strong>Indicado:</strong> Fisioterapia ortopédica</p>
+            <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;margin-top:.5rem;display:inline-block;">Agendar avaliação</a>
+          </article>
+          <article class="body-card" data-body="ombro" aria-label="Ombro e braço" style="display:none;">
+            <h3>Ombro e braço</h3>
+            <p>Dor ao levantar o braço, lesões e recuperação de cirurgia.</p>
+            <p><strong>Indicado:</strong> Fisioterapia ortopédica</p>
+            <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;margin-top:.5rem;display:inline-block;">Agendar avaliação</a>
+          </article>
+          <article class="body-card" data-body="coluna" aria-label="Coluna" style="display:none;">
+            <h3>Coluna</h3>
+            <p>Dor nas costas e má postura.</p>
+            <p><strong>Indicado:</strong> Fisioterapia ortopédica e Pilates</p>
+            <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;margin-top:.5rem;display:inline-block;">Agendar avaliação</a>
+          </article>
+          <article class="body-card" data-body="quadril" aria-label="Quadril e região pélvica" style="display:none;">
+            <h3>Quadril e região pélvica</h3>
+            <p>Dor no quadril, gestação, pós-parto e cuidados com a saúde íntima.</p>
+            <p><strong>Indicado:</strong> Fisioterapia pélvica</p>
+            <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;margin-top:.5rem;display:inline-block;">Agendar avaliação</a>
+          </article>
+          <article class="body-card" data-body="joelho" aria-label="Joelho" style="display:none;">
+            <h3>Joelho</h3>
+            <p>Dor, inchaço e recuperação após lesões ou cirurgia.</p>
+            <p><strong>Indicado:</strong> Fisioterapia ortopédica e Hidroterapia</p>
+            <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;margin-top:.5rem;display:inline-block;">Agendar avaliação</a>
+          </article>
+          <article class="body-card" data-body="pé" aria-label="Pé e tornozelo" style="display:none;">
+            <h3>Pé e tornozelo</h3>
+            <p>Torções, dor ao caminhar e recuperação de lesões.</p>
+            <p><strong>Indicado:</strong> Fisioterapia ortopédica</p>
+            <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;margin-top:.5rem;display:inline-block;">Agendar avaliação</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVIÇOS ========== -->
+<section id="servicos" class="section section-alt" aria-label="Serviços">
+  <div class="container">
+    <h2 class="anim-up">Serviços para você e família</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Todos disponíveis nas duas unidades. Escolha a aba e veja o que oferecemos.</p>
+
+    <div class="services-tabs anim-up" style="animation-delay:.2s" role="tablist" aria-label="Filtros de serviços">
+      <button onclick="filterServices('todos')" class="tab-btn active" role="tab" aria-selected="true" id="tab-todos">Todos</button>
+      <button onclick="filterServices('corpo-e-movimento')" class="tab-btn" role="tab" aria-selected="false" id="tab-corpo">Corpo e movimento</button>
+      <button onclick="filterServices('criancas')" class="tab-btn" role="tab" aria-selected="false" id="tab-criancas">Crianças</button>
+      <button onclick="filterServices('mente-e-aprendizado')" class="tab-btn" role="tab" aria-selected="false" id="tab-mente">Mente e aprendizado</button>
+      <button onclick="filterServices('nutricion')" class="tab-btn" role="tab" aria-selected="false" id="tab-nutricion">Nutrição</button>
+      <button onclick="filterServices('na-agua')" class="tab-btn" role="tab" aria-selected="false" id="tab-agua">Na água</button>
+      <button onclick="filterServices('estetica')" class="tab-btn" role="tab" aria-selected="false" id="tab-estetica">Estética</button>
+    </div>
+
+    <div class="services-grid anim-up" style="animation-delay:.3s" id="servicesGrid" role="tabpanel" aria-labelledby="tab-todos"></div>
+  </div>
+</section>
+
+<!-- ========== NA ÁGUA ========== -->
+<section id="na-agua" class="section" aria-label="Fisioterapia na água">
+  <div class="container" style="background:linear-gradient(180deg,#EAE2C8,#F5EFE3);border-radius:28px;padding:3rem 2rem;position:relative;overflow:hidden;">
+    <div style="position:relative;z-index:2;max-width:720px;">
+      <h2 class="anim-up">Fisioterapia e exercícios na água</h2>
+      <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">A água deixa o corpo mais leve e ajuda você a se mover com menos impacto. Na Alcançar você encontra hidroterapia, hidroginástica e natação.</p>
+      <a href="#agendar-seletor" class="btn-primary anim-up" style="animation-delay:.2s;display:inline-block;margin-top:1.5rem;">Agendar</a>
+    </div>
+    <!-- Ondas decorativas -->
+    <svg style="position:absolute;bottom:-40px;right:-10%;width:500px;height:200px;opacity:.35;z-index:1;" viewBox="0 0 500 200" aria-hidden="true" preserveAspectRatio="none">
+      <path d="M0 60 Q50 20 100 60 T200 60 T300 60 T400 60 T500 60 L500 200 L0 200 Z" fill="#8FB5A0"/>
+      <path d="M0 100 Q50 60 100 100 T200 100 T300 100 T400 100 T500 100 L500 200 L0 200 Z" fill="#EBD9A9" opacity=".7"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ========== CONVÊNIO ========== -->
+<section id="convenio" class="section" aria-label="Convênio">
+  <div class="container" style="text-align:center;">
+    <h2 class="anim-up">Atendemos Unimed Três Vales</h2>
+    <figure class="anim-up" style="animation-delay:.1s;margin:1.5rem auto;max-width:260px;">
+      <img src="/assets/img/unimed-tres-vales.jpg" alt="Logo Unimed Três Vales" width="260" height="120" style="margin:0 auto;">
+      <figcaption class="sr-only">Logo do convênio Unimed Três Vales</figcaption>
+    </figure>
+    <p class="anim-up" style="animation-delay:.2s;color:var(--texto-claro);">Use o seu plano para cuidar da saúde. Fale com a gente e confirme a cobertura do seu atendimento.</p>
+    <a href="https://wa.me/5533999423675?text=Olá%21%20Gostaria%20de%20saber%20sobre%20o%20atendimento%20pela%20Unimed%20Três%20Vales." class="btn-primary anim-up" style="animation-delay:.3s;display:inline-block;margin-top:1rem;">Confirme seu plano</a>
+    <p class="anim-up" style="animation-delay:.4s;font-size:.85rem;color:var(--texto-claro);margin-top:.8rem;">A cobertura pode variar conforme o seu plano.</p>
+  </div>
+</section>
+
+<!-- ========== ESTÉTICA ========== -->
+<section id="estetica" class="section section-alt" aria-label="Estética">
+  <div class="container">
+    <h2 class="anim-up">Estética e autocuidado</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Procedimentos para você se sentir bem por dentro e por fora.</p>
+    <div class="services-grid" style="margin-top:2rem;">
+      <article class="service-card anim-up" style="animation-delay:.15s;">
+        <span class="tag">Estética</span>
+        <h3>Botox</h3>
+        <p>Tratamento de linhas e expressões com aplicação segura.</p>
+        <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;">Agendar</a>
+      </article>
+      <article class="service-card anim-up" style="animation-delay:.25s;">
+        <span class="tag">Estética</span>
+        <h3>Limpeza de pele</h3>
+        <p>Higienização e cuidados para uma pele saudável.</p>
+        <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;">Agendar</a>
+      </article>
+      <article class="service-card anim-up" style="animation-delay:.35s;">
+        <span class="tag">Estética</span>
+        <h3>Depilação a laser</h3>
+        <p>Remoção duradoura e confortável, com tecnologia atualizada.</p>
+        <a href="#agendar-seletor" class="btn-primary" style="font-size:.85rem;padding:.55rem 1rem;">Agendar</a>
+      </article>
+    </div>
+    <p class="anim-up" style="animation-delay:.45s;margin-top:1rem;color:var(--texto-claro);">E outros procedimentos — fale conosco.</p>
+    <a href="#agendar-seletor" class="btn-primary anim-up" style="animation-delay:.55s;display:inline-block;margin-top:1rem;">Agendar avaliação estética</a>
+  </div>
+</section>
+
+<!-- ========== COMO FUNCIONA ========== -->
+<section id="como-funciona" class="section" aria-label="Como funciona">
+  <div class="container" style="max-width:900px;">
+    <h2 class="anim-up">Como funciona o atendimento</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;">
+      <div class="anim-up" style="animation-delay:.1s;background:rgba(143,181,160,.08);padding:1.5rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:2rem;color:var(--salvia-deep);margin-bottom:.5rem;">1</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Fale com a gente</h3>
+        <p style="font-size:.9rem;color:var(--texto-claro);">Clique no botão e chame no WhatsApp da unidade mais perto de você.</p>
+      </div>
+      <div class="anim-up" style="animation-delay:.2s;background:rgba(143,181,160,.08);padding:1.5rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:2rem;color:var(--salvia-deep);margin-bottom:.5rem;">2</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Agende sua avaliação</h3>
+        <p style="font-size:.9rem;color:var(--texto-claro);">Combinamos o melhor dia e horário, de segunda a sexta, das 7h às 21h.</p>
+      </div>
+      <div class="anim-up" style="animation-delay:.3s;background:rgba(143,181,160,.08);padding:1.5rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:2rem;color:var(--salvia-deep);margin-bottom:.5rem;">3</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Receba seu plano de cuidado</h3>
+        <p style="font-size:.9rem;color:var(--texto-claro);">O profissional conversa com você e explica o tratamento indicado para o seu caso.</p>
+      </div>
+      <div class="anim-up" style="animation-delay:.4s;background:rgba(143,181,160,.08);padding:1.5rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:2rem;color:var(--salvia-deep);margin-bottom:.5rem;">4</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Acompanhe sua evolução</h3>
+        <p style="font-size:.9rem;color:var(--texto-claro);">Durante o tratamento, acompanhamos o seu progresso de perto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NÚMEROS ========== -->
+<section id="numeros" class="section" aria-label="Números da clínica">
+  <div class="container" style="text-align:center;">
+    <h2 class="anim-up">Nossos números</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Dados reais — sem exageros.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-top:2rem;">
+      <div class="anim-up" style="animation-delay:.15s;background:rgba(143,181,160,.08);padding:2rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:3rem;color:var(--salvia-deep);line-height:1;" data-counter="2">0</div>
+        <p style="font-weight:600;color:var(--texto);margin-top:.3rem;">Unidades</p>
+      </div>
+      <div class="anim-up" style="animation-delay:.25s;background:rgba(143,181,160,.08);padding:2rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:3rem;color:var(--salvia-deep);line-height:1;" data-counter="5">0</div>
+        <p style="font-weight:600;color:var(--texto);margin-top:.3rem;">Dias por semana</p>
+      </div>
+      <div class="anim-up" style="animation-delay:.35s;background:rgba(143,181,160,.08);padding:2rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:3rem;color:var(--salvia-deep);line-height:1;" data-counter="14">0</div>
+        <p style="font-weight:600;color:var(--texto);margin-top:.3rem;">Horas de atendimento por dia</p>
+      </div>
+      <div class="anim-up" style="animation-delay:.45s;background:rgba(143,181,160,.08);padding:2rem;border-radius:20px;">
+        <div style="font-family:var(--fonte-titulo);font-size:1.8rem;color:var(--salvia-deep);line-height:1.2;">1 só lugar</div>
+        <p style="font-weight:600;color:var(--texto);margin-top:.3rem;">Para cuidar de toda a família</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EQUIPE ========== -->
+<section id="equipe" class="section" aria-label="Equipe">
+  <div class="container">
+    <h2 class="anim-up">Profissionais que cuidam de você</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Conheça quem vai te atender.</p>
+
+    <div class="services-grid" style="margin-top:2rem;">
+      <article class="service-card anim-up" style="animation-delay:.15s;">
+        <figure style="margin-bottom:1rem;">
+          <div style="background:linear-gradient(135deg,#8FB5A0,#4F6B5A);border-radius:16px;height:180px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--fonte-titulo);font-size:1.4rem;">Jamara Ferraz</div>
+          <figcaption class="sr-only">Foto de Jamara Ferraz — fisioterapia e pilates</figcaption>
+        </figure>
+        <h3>Jamara Ferraz</h3>
+        <p style="font-size:.9rem;color:var(--texto-claro);">Fisioterapia e Pilates</p>
+        <p style="font-size:.85rem;color:#777;">CREFITO: a preencher</p>
+      </article>
+      <article class="service-card anim-up" style="animation-delay:.25s;">
+        <figure style="margin-bottom:1rem;">
+          <div style="background:linear-gradient(135deg,#EBD9A9,#F3C8A3);border-radius:16px;height:180px;display:flex;align-items:center;justify-content:center;color:#3A3A36;font-family:var(--fonte-titulo);font-size:1.4rem;">Sinnara Oliveira</div>
+          <figcaption class="sr-only">Foto de Sinnara Oliveira — nutrição</figcaption>
+        </figure>
+        <h3>Sinnara Oliveira</h3>
+        <p style="font-size:.9rem;color:var(--texto-claro);">Nutrição</p>
+        <p style="font-size:.85rem;color:#777;">CRN: a preencher</p>
+      </article>
+      <article class="service-card anim-up" style="animation-delay:.35s;">
+        <figure style="margin-bottom:1rem;">
+          <div style="background:linear-gradient(135deg,#4F6B5A,#3A5850);border-radius:16px;height:180px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--fonte-titulo);font-size:1.4rem;">Dra. Thaluany Felix</div>
+          <figcaption class="sr-only">Foto de Dra. Thaluany Felix — estética e depilação a laser</figcaption>
+        </figure>
+        <h3>Dra. Thaluany Felix</h3>
+        <p style="font-size:.9rem;color:var(--texto-claro);">Estética e depilação a laser</p>
+        <p style="font-size:.85rem;color:#777;">CRF / registro: a preencher</p>
+      </article>
+    </div>
+
+    <p class="anim-up" style="animation-delay:.45s;margin-top:2rem;color:var(--texto-claro);">Cards editáveis para Psicologia, Psicopedagogia, Neuropsicopedagogia e Terapeuta CME.</p>
+  </div>
+</section>
+
+<!-- ========== VIDA FIT ========== -->
+<section id="vidafit" class="section section-alt" aria-label="VidaFit Culinária Saudável">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;">
+    <div class="anim-up">
+      <h2>Novidade em Jacinto: VidaFit Culinária Saudável</h2>
+      <p style="margin-top:1rem;color:var(--texto-claro);">Na unidade de Jacinto você encontra refeições saudáveis congeladas da VidaFit, com sabor e praticidade para o seu dia a dia. Pacientes e parceiros da clínica têm desconto de até 10%.</p>
+      <blockquote style="margin-top:1rem;padding:1rem;border-left:4px solid var(--salvia);background:rgba(143,181,160,.08);border-radius:0 12px 12px 0;font-family:var(--fonte-titulo);font-size:1.1rem;color:var(--salvia-deep);">"Saúde, bem-estar e alimentação saudável caminham juntos!"</blockquote>
+      <a href="https://www.instagram.com/vidafit.almenara" class="btn-primary" style="display:inline-block;margin-top:1rem;">Conhecer a VidaFit →</a>
+    </div>
+    <figure class="anim-up" style="animation-delay:.15s;margin:0;">
+      <div style="background:linear-gradient(135deg,#8FB5A0,#4F6B5A);border-radius:24px;padding:3rem 2rem;text-align:center;color:#fff;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <svg width="70" height="70" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="rgba(255,255,255,.15)"/><path d="M50 25 L55 50 L80 50 L60 65 L65 85 L50 70 L35 85 L40 65 L20 50 L45 50 Z" fill="#EBD9A9"/></svg>
+        <figcaption style="margin-top:1rem;font-family:var(--fonte-titulo);font-size:1.2rem;color:var(--dourado);">VidaFit Culinária Saudável</figcaption>
+        <p style="margin-top:.5rem;font-size:.9rem;color:rgba(255,255,255,.85);">Refeições congeladas — @vidafit.almenara</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ========== UNIDADES ========== -->
+<section id="unidades" class="section" aria-label="Nossas unidades">
+  <div class="container">
+    <h2 class="anim-up">Onde nos encontrar</h2>
+    <div class="units-tabs anim-up" style="animation-delay:.1s" role="tablist">
+      <button onclick="showUnit(0)" class="tab-btn active" id="unitBtn0" role="tab" aria-selected="true">Almenara</button>
+      <button onclick="showUnit(1)" class="tab-btn" id="unitBtn1" role="tab" aria-selected="false">Jacinto</button>
+    </div>
+
+    <div id="unitPanel" class="unit-card anim-up" style="animation-delay:.2s" role="tabpanel">
+      <h3 id="unitTitle">Almenara</h3>
+      <p id="unitAddr">Rua Henrique Heitman, 288 – São Judas – Almenara/MG</p>
+      <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem;">
+        <a href="https://maps.google.com/?q=Rua+Henrique+Heitman+288+São+Judas+Almenara+MG" target="_blank" rel="noopener" class="btn-primary">Como chegar</a>
+        <a href="https://wa.me/5533999423675?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20unidade%20de%20Almenara." class="btn-primary">WhatsApp Almenara</a>
+      </div>
+      <p style="margin-top:1rem;color:var(--texto-claro);font-size:.9rem;" id="unitHorario">Segunda a sexta, das 7h às 21h</p>
+      <p id="unitBadge" style="margin-top:.5rem;font-weight:700;color:var(--salvia-deep);">Nova localização</p>
+      <div style="margin-top:1rem;border-radius:16px;overflow:hidden;">
+        <iframe id="unitMap" title="Mapa da unidade Almenara" width="100%" height="300" style="border:0;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2!2d-41.3!3d-18.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMwJzE4LjAiSyA0McKwMjAnMTkuNCJF!5e0!3m2!1spt-BR!2sbr!4v1234567890"></iframe>
+      </div>
+      <div id="unitSelo" style="margin-top:1rem;display:inline-block;padding:.35rem 1rem;border-radius:999px;background:#C5E6C8;color:#2A522D;font-weight:700;font-size:.9rem;">Aberto agora</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DEPOIMENTOS (controlado por flag) ========== -->
+<section id="depoimentos" class="section" aria-label="Depoimentos" style="display:none;">
+  <div class="container">
+    <h2 class="anim-up">Quem cuida da saúde com a gente</h2>
+    <p style="font-size:.9rem;color:var(--texto-claro);">Depoimentos — substitua pelo texto real após confirmar.</p>
+    <div class="testimonials" style="margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
+      <blockquote class="t-card">
+        <p>[depoimento de paciente: substituir]</p>
+        <cite>— Paciente, Almenara</cite>
+      </blockquote>
+      <blockquote class="t-card">
+        <p>[depoimento de paciente: substituir]</p>
+        <cite>— Paciente, Jacinto</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INSTAGRAM ========== -->
+<section id="instagram" class="section" aria-label="Instagram">
+  <div class="container" style="text-align:center;">
+    <h2 class="anim-up">Acompanhe o dia a dia da clínica</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Dicas, novidades e bastidores no nosso Instagram.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2rem;" aria-label="Grade de fotos do Instagram">
+      <a href="https://www.instagram.com/alcancarfisio" aria-label="Instagram Alcançar — foto 1" class="focus-ring" style="display:block;border-radius:12px;overflow:hidden;background:#EAE2C8;height:160px;position:relative;">
+        <img src="/assets/img/logo.jpg" alt="Instagram Alcançar — foto 1 (placeholder)" width="160" height="160" style="width:100%;height:100%;object-fit:cover;opacity:.8;">
+      </a>
+      <a href="https://www.instagram.com/alcancarfisio" aria-label="Instagram Alcançar — foto 2" class="focus-ring" style="display:block;border-radius:12px;overflow:hidden;background:#EAE2C8;height:160px;position:relative;">
+        <img src="/assets/img/logo.jpg" alt="Instagram Alcançar — foto 2 (placeholder)" width="160" height="160" style="width:100%;height:100%;object-fit:cover;opacity:.8;">
+      </a>
+      <a href="https://www.instagram.com/alcancarfisio" aria-label="Instagram Alcançar — foto 3" class="focus-ring" style="display:block;border-radius:12px;overflow:hidden;background:#EAE2C8;height:160px;position:relative;">
+        <img src="/assets/img/logo.jpg" alt="Instagram Alcançar — foto 3 (placeholder)" width="160" height="160" style="width:100%;height:100%;object-fit:cover;opacity:.8;">
+      </a>
+      <a href="https://www.instagram.com/alcancarfisio" aria-label="Instagram Alcançar — foto 4" class="focus-ring" style="display:block;border-radius:12px;overflow:hidden;background:#EAE2C8;height:160px;position:relative;">
+        <img src="/assets/img/logo.jpg" alt="Instagram Alcançar — foto 4 (placeholder)" width="160" height="160" style="width:100%;height:100%;object-fit:cover;opacity:.8;">
+      </a>
+    </div>
+    <a href="https://www.instagram.com/alcancarfisio" class="btn-primary" style="display:inline-block;margin-top:2rem;">Seguir @alcancarfisio →</a>
+  </div>
+</section>
+
+<!-- ========== PERGUNTAS FREQUENTES ========== -->
+<section id="faq" class="section section-alt" aria-label="Perguntas frequentes">
+  <div class="container" style="max-width:800px;">
+    <h2 class="anim-up">Perguntas frequentes</h2>
+    <div role="region" aria-label="Acordeão de perguntas" style="margin-top:2rem;">
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)" class="faq-q focus-ring" aria-expanded="false" aria-controls="faq1"><span>Como agendo minha consulta?</span><span class="icon" aria-hidden="true">+</span></button>
+        <div id="faq1" class="faq-a" role="region"><div style="padding:1rem 0;font-size:.95rem;color:var(--texto-claro);">É simples: clique em <strong>"Agende a sua consulta aqui"</strong>, escolha a unidade (Almenara ou Jacinto) e fale com a gente pelo WhatsApp.</div></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)" class="faq-q focus-ring" aria-expanded="false" aria-controls="faq2"><span>Vocês atendem convênio?</span><span class="icon" aria-hidden="true">+</span></button>
+        <div id="faq2" class="faq-a" role="region"><div style="padding:1rem 0;font-size:.95rem;color:var(--texto-claro);">Sim, atendemos <strong>Unimed Três Vales</strong>. Fale com a gente pelo WhatsApp e confirme o seu plano.</div></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)" class="faq-q focus-ring" aria-expanded="false" aria-controls="faq3"><span>Qual é o horário de atendimento?</span><span class="icon" aria-hidden="true">+</span></button>
+        <div id="faq3" class="faq-a" role="region"><div style="padding:1rem 0;font-size:.95rem;color:var(--texto-claro);">De segunda a sexta, das <strong>7h às 21h</strong>, nas duas unidades.</div></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)" class="faq-q focus-ring" aria-expanded="false" aria-controls="faq4"><span>Onde ficam as unidades?</span><span class="icon" aria-hidden="true">+</span></button>
+        <div id="faq4" class="faq-a" role="region"><div style="padding:1rem 0;font-size:.95rem;color:var(--texto-claro);"><strong>Almenara:</strong> Rua Henrique Heitman, 288, São Judas. <strong>Jacinto:</strong> Rua Clarindo Barbosa, 92, Centro.</div></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)" class="faq-q focus-ring" aria-expanded="false" aria-controls="faq5"><span>A clínica atende crianças?</span><span class="icon" aria-hidden="true">+</span></button>
+        <div id="faq5" class="faq-a" role="region"><div style="padding:1rem 0;font-size:.95rem;color:var(--texto-claro);">Sim. Temos fisioterapia infantil, psicologia infantil, psicopedagogia, neuropsicopedagogia e terapeuta CME.</div></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)" class="faq-q focus-ring" aria-expanded="false" aria-controls="faq6"><span>Preciso de pedido médico?</span><span class="icon" aria-hidden="true">+</span></button>
+        <div id="faq6" class="faq-a" role="region"><div style="padding:1rem 0;font-size:.95rem;color:var(--texto-claro);">Fale com a gente pelo WhatsApp e informamos o que é necessário para o seu atendimento.</div></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="toggleFaq(this)" class="faq-q focus-ring" aria-expanded="false" aria-controls="faq7"><span>Quais são as formas de pagamento?</span><span class="icon" aria-hidden="true">+</span></button>
+        <div id="faq7" class="faq-a" role="region"><div style="padding:1rem 0;font-size:.95rem;color:var(--texto-claro);">Fale com a gente pelo WhatsApp para saber as condições.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FORMULÁRIO RÁPIDO ========== -->
+<section id="contato" class="section" aria-label="Formulário rápido">
+  <div class="container">
+    <h2 class="anim-up">Prefere que a gente te chame?</h2>
+    <p class="anim-up" style="animation-delay:.1s;color:var(--texto-claro);">Preencha e a gente envia pelo WhatsApp da unidade escolhida.</p>
+    <form class="quick-form anim-up" style="animation-delay:.2s;max-width:640px;margin:2rem auto 0;" onsubmit="submitQuickForm(event)" novalidate>
+      <label for="qName">Seu nome <span aria-label="obrigatório">*</span></label>
+      <input id="qName" name="nome" type="text" placeholder="Seu nome" required aria-required="true" style="margin-bottom:1rem;" oninput="this.setCustomValidity('')">
+
+      <label for="qUnit">Unidade <span aria-label="obrigatório">*</span></label>
+      <select id="qUnit" name="unidade" required aria-required="true" style="margin-bottom:1rem;">
+        <option value="">Escolha</option>
+        <option value="Almenara">Almenara</option>
+        <option value="Jacinto">Jacinto</option>
+      </select>
+
+      <label for="qService">O que você procura? <span aria-label="obrigatório">*</span></label>
+      <select id="qService" name="servico" required aria-required="true" style="margin-bottom:1rem;">
+        <option value="">Escolha</option>
+        <option value="Fisioterapia geral">Fisioterapia geral</option>
+        <option value="Fisioterapia adulto">Fisioterapia adulto</option>
+        <option value="Fisioterapia infantil">Fisioterapia infantil</option>
+        <option value="Fisioterapia para idosos">Fisioterapia para idosos</option>
+        <option value="Fisioterapia pélvica">Fisioterapia pélvica</option>
+        <option value="Ortopedia">Ortopedia</option>
+        <option value="Pilates">Pilates</option>
+        <option value="Hidroterapia">Hidroterapia</option>
+        <option value="Hidroginástica">Hidroginástica</option>
+        <option value="Natação">Natação</option>
+        <option value="Psicologia">Psicologia</option>
+        <option value="Psicopedagogia">Psicopedagogia</option>
+        <option value="Neuropsicopedagogia">Neuropsicopedagogia</option>
+        <option value="Terapeuta CME">Terapeuta CME</option>
+        <option value="Nutrição">Nutrição</option>
+        <option value="Estética">Estética</option>
+      </select>
+
+      <label for="qMsg">Mensagem (opcional)</label>
+      <textarea id="qMsg" name="mensagem" rows="3" placeholder="Informe algo que ajude nosso atendimento..." style="margin-bottom:1rem;"></textarea>
+
+      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- ========== CHAMADA FINAL ========== -->
+<section aria-label="Chamada final" style="padding:5rem 0;text-align:center;background:linear-gradient(180deg,#EAE2C8,#F5EFE3);">
+  <div class="container">
+    <h2>Pronto para cuidar de você?</h2>
+    <p style="margin-top:1rem;color:var(--texto-claro);">Fale com a gente agora e agende o seu atendimento.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+      <a href="https://wa.me/5533999423675?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20unidade%20de%20Almenara." class="btn-primary">WhatsApp Almenara</a>
+      <a href="https://wa.me/5533999193564?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20unidade%20de%20Jacinto." class="btn-primary">WhatsApp Jacinto</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SELETOR DE AGENDAR (modal) ========== -->
+<div id="agendar-seletor" role="dialog" aria-modal="true" aria-label="Agendar consulta" style="position:fixed;inset:0;background:rgba(58,58,54,.7);backdrop-filter:blur(8px);z-index:300;display:none;align-items:center;justify-content:center;padding:1rem;">
+  <div style="background:var(--branco);border-radius:28px;padding:2.5rem;max-width:600px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;">
+    <button onclick="closeAgendar()" aria-label="Fechar" style="position:absolute;top:1rem;right:1rem;font-size:1.5rem;background:none;color:var(--texto);">×</button>
+    <h3>Agende a sua consulta aqui</h3>
+    <p style="margin-top:.5rem;color:var(--texto-claro);">Escolha a unidade — o WhatsApp abrirá com a mensagem pronta.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;">
+      <a href="https://wa.me/5533999423675?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20unidade%20de%20Almenara." class="btn-primary" style="justify-content:center;display:block;text-align:center;" onclick="closeAgendar()">Almenara →</a>
+      <a href="https://wa.me/5533999193564?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20unidade%20de%20Jacinto." class="btn-primary" style="justify-content:center;display:block;text-align:center;" onclick="closeAgendar()">Jacinto →</a>
+    </div>
+    <p style="font-size:.8rem;color:var(--texto-claro);margin-top:1rem;">Microtexto: Rápido, seguro e sem compromisso.</p>
+  </div>
+</div>
+
+</main>
+
+<!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
+<a href="#agendar-seletor" onclick="openAgendar();return false;" aria-label="Abrir seletor de agendamento" style="position:fixed;bottom:2rem;right:2rem;z-index:200;background:var(--salvia-deep);color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 8px 24px rgba(79,107,90,.35);transition:transform .15s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">💬</a>
+
+<!-- ========== BARRA FIXA CELULAR ========== -->
+<div style="position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid rgba(143,181,160,.25);padding:.6rem 1rem;display:flex;gap:.5rem;justify-content:center;z-index:210;display:none;" id="mobileBar" aria-label="Barra inferior de acesso rápido">
+  <a href="#agendar-seletor" onclick="openAgendar();return false;" class="btn-primary" style="flex:1;justify-content:center;">Agendar</a>
+  <a href="tel:+5533999423675" class="btn-primary" style="flex:1;justify-content:center;background:var(--salvia);">Ligar</a>
+</div>
+
+<!-- ========== RODAPÉ ========== -->
+<footer class="site-footer" role="contentinfo" aria-label="Rodapé">
+  <div class="container footer-inner">
+    <div>
+      <a href="#" aria-label="Alcançar — Página inicial"><img src="/assets/img/logo.jpg" alt="Logo Alcançar" width="48" height="48" style="height:48px;width:auto;"></a>
+      <p style="margin-top:.8rem;color:var(--dourado);font-family:var(--fonte-titulo);font-size:1.3rem;">ALCANÇAR</p>
+      <p style="font-size:.85rem;color:rgba(255,255,255,.7);">Clínica de Fisioterapia Integrada</p>
+      <p style="margin-top:.5rem;font-size:.85rem;color:rgba(255,255,255,.7);">Lema: Cuidar • Acolher • Transformar</p>
+    </div>
+    <nav aria-label="Links rápidos">
+      <h4 style="font-family:var(--fonte-titulo);font-size:1.1rem;color:var(--dourado);margin-bottom:.6rem;">Links rápidos</h4>
+      <ul style="list-style:none;font-size:.9rem;line-height:2;">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#unidades">Unidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h4 style="font-family:var(--fonte-titulo);font-size:1.1rem;color:var(--dourado);margin-bottom:.6rem;">Almenara</h4>
+      <p style="font-size:.9rem;line-height:1.7;">Rua Henrique Heitman, 288<br>São Judas – Almenara/MG<br>WhatsApp: <a href="https://wa.me/5533999423675">(33) 99942-3675</a></p>
+    </div>
+    <div>
+      <h4 style="font-family:var(--fonte-titulo);font-size:1.1rem;color:var(--dourado);margin-bottom:.6rem;">Jacinto</h4>
+      <p style="font-size:.9rem;line-height:1.7;">Rua Clarindo Barbosa, 92<br>Centro – Jacinto/MG<br>WhatsApp: <a href="https://wa.me/5533999193564">(33) 99919-3564</a></p>
+      <p style="font-size:.85rem;color:rgba(255,255,255,.7);margin-top:.5rem;">Segunda a sexta, das 7h às 21h</p>
+      <p style="font-size:.85rem;color:rgba(255,255,255,.7);margin-top:.3rem;"><a href="https://www.instagram.com/alcancarfisio">Instagram @alcancarfisio</a></p>
+    </div>
+  </div>
+  <div style="margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem;color:rgba(255,255,255,.6);text-align:center;">
+    <p>Responsável técnico: <strong>[nome e registro a preencher]</strong></p>
+    <p>Ao usar o formulário, você será direcionado ao WhatsApp. Não guardamos os seus dados neste site.</p>
+    <p>© 2026 Alcançar – Clínica de Fisioterapia Integrada. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>
